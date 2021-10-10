@@ -2,7 +2,7 @@ import axios from 'axios'
 import { API } from './config'
 const GetUsers = async function() {
     try {
-        const responce = await axios.get(`${API}/apidata.json/User`);
+        const responce = await axios.get(`${API}/User.json`);
         const data = parseErrors(responce, 200)
         return data
     } catch (err) {
@@ -11,7 +11,7 @@ const GetUsers = async function() {
 }
 const GetAdmins = async function() {
         try {
-            const responce = await axios.get(`${API}/apidata.json/Admin`);
+            const responce = await axios.get(`${API}/Admins.json`);
             const data = parseErrors(responce, 200)
             return data
         } catch (err) {
@@ -30,7 +30,7 @@ const GetAdmins = async function() {
 const parseErrors = function(responce, code) {
     if (responce.status != code) throw Error("status Failure");
     if (!responce.data) return ""
-    const data = responce.data
+    const data = responce.data.type
     return data
 }
 export const Data = {
