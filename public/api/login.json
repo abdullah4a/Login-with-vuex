@@ -1,0 +1,56 @@
+{
+    "Users": [{
+            "id ": "001132011",
+            "username": "abdullah4a",
+            "name": "Abdullah",
+            "lastname ": "Iqbal",
+            "email": "abdullah@vuecoding.com",
+            "isactive": true,
+            "type": "User"
+        },
+        {
+            "id ": "001132011",
+            "username": "abdullah4a",
+            "name": "Abdullah",
+            "lastname ": "Iqbal",
+            "email": "abdullah@vuecoding.com",
+            "isactive": true,
+            "type": "User"
+        },
+        {
+            "id ": "001132011",
+            "username": "abdullah4a",
+            "name": "Abdullah",
+            "lastname ": "Iqbal",
+            "email": "abdullah@vuecoding.com",
+            "isactive": true,
+            "type": "User"
+        },
+        {
+            "id ": "001132011",
+            "username": "abdullah4a",
+            "name": "Abdullah",
+            "lastname ": "Iqbal",
+            "email": "abdullah@vuecoding.com",
+            "isactive": true,
+            "type": "User"
+        }
+    ],
+    "Admin": [{
+        "id ": "001132011",
+        "username": "abdullah4a",
+        "name": "Abdullah",
+        "lastname ": "Iqbal",
+        "email": "abdullah@vuecoding.com",
+        "isactive": true,
+        "type": "User"
+    }, {
+        "id ": "001132011",
+        "username": "abdullah4a",
+        "name": "Abdullah",
+        "lastname ": "Iqbal",
+        "email": "abdullah@vuecoding.com",
+        "isactive": true,
+        "type": "User"
+    }]
+}
