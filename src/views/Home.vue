@@ -10,10 +10,11 @@
       <v-card-text>
         <v-card-text>
           <div v-if="admins">
-            <ul v-for="admin in admins" :key="admin">
-              <!-- <li>{{ admin.id }}</li> -->
+            <ul v-for="admin in admins" :key="admin.id">
+              <li>{{ admin.id }}</li>
               <li>{{ admin.username }}</li>
-              <li>{{ admin.name }} {{ admin.lastname }}</li>
+              <li>{{ admin.name }}</li>
+              <li>{{ admin.lastname }}</li>
               <li>{{ admin.email }}</li>
               <li>{{ admin.isactive }}</li>
             </ul>
@@ -29,12 +30,13 @@
         </span>
         <v-card-text>
           <div v-if="users">
-            <ul v-for="user in users" :key="user">
-              <!-- <li>{{ user.id }}</li> -->
+            <ul v-for="user in users" :key="user.id">
+              <li>{{ user.id }}</li>
               <li>{{ user.username }}</li>
-              <li>{{ user.name }} {{ user.lastname }}</li>
+              <li>{{ user.name }}</li>
+              <li>{{ user.lastname }}</li>
               <li>{{ user.email }}</li>
-              <li>{{ user.active }}</li>
+              <li>{{ user.isactive }}</li>
             </ul>
           </div>
         </v-card-text>
@@ -56,15 +58,15 @@ export default {
   },
   methods: {
     async LoadUsers() {
-      this.users.push(await Data.GetUsers());
+      this.users = await Data.GetUsers();
     },
     async LoadAdmins() {
       this.admins = await Data.GetAdmins();
     },
   },
   async created() {
-    await this.LoadUsers();
     await this.LoadAdmins();
+    await this.LoadUsers();
   },
 };
 </script>
