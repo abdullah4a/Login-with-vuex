@@ -30,7 +30,7 @@ const GetAdmins = async function() {
 const parseErrors = function(responce, code) {
     if (responce.status != code) throw Error("status Failure");
     if (!responce.data) return ""
-    const data = responce.data.type
+    const data = responce.data
     return data
 }
 export const Data = {
