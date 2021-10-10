@@ -1,51 +1,15 @@
 {
     "Users": [{
-            "id ": "1132011",
-            "username": "abdullah4a",
-            "name": "Abdullah",
-            "lastname ": "Iqbal",
-            "email": "abdullah@vuecoding.com",
-            "isactive": true,
-            "type": "User"
-        },
-        {
-            "id ": "1132012",
-            "username": "abdullah4a",
-            "name": "Abdullah",
-            "lastname ": "Iqbal",
-            "email": "abdullah@vuecoding.com",
-            "isactive": true,
-            "type": "User"
-        },
-        {
-            "id ": "1132013",
-            "username": "abdullah4a",
-            "name": "Abdullah",
-            "lastname ": "Iqbal",
-            "email": "abdullah@vuecoding.com",
-            "isactive": true,
-            "type": "User"
-        },
-        {
-            "id ": "1132014",
-            "username": "abdullah4a",
-            "name": "Abdullah",
-            "lastname ": "Iqbal",
-            "email": "abdullah@vuecoding.com",
-            "isactive": true,
-            "type": "User"
-        }
-    ],
-    "Admin": [{
-        "id ": "1132021",
-        "username": "abdullah4a",
+        "id ": "1132011",
+        "username": "abdullah4m",
         "name": "Abdullah",
         "lastname ": "Iqbal",
-        "email": "abdullah@vuecoding.com",
+        "email": "abdullah@vuecodingcamp.com",
         "isactive": true,
         "type": "User"
-    }, {
-        "id ": "1132022",
+    }],
+    "Admin": [{
+        "id ": "1132021",
         "username": "abdullah4a",
         "name": "Abdullah",
         "lastname ": "Iqbal",

@@ -4,11 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const state = {
     // a: 2,
-    UserLogin: {
-        UID: '2aaaabbbbcccd1',
-        email: "abullah@someemail.com",
-        Pwd: "abc"
-    },
+    UserLogin: [],
     Islogin: false,
     error: "Error in login\n Check again your Email and Password"
 };
