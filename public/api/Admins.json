@@ -3,7 +3,8 @@
     "username": "abdullah4a",
     "name": "Abdullah",
     "lastname ": "Iqbal",
-    "email": "abdullah@vuecoding.com",
+    "password": "abd123",
+    "email ": "abdullah @vuecoding.com ",
     "isactive": true,
     "type": "User"
 }]

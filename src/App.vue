@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-if="IsNotLogin">
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
@@ -41,18 +41,32 @@
       <router-view />
     </v-main>
   </v-app>
+  <v-app v-else>
+    <Login />
+  </v-app>
 </template>
 
 <script>
+import Login from "./views/Login.vue";
+import store from "./store";
+import { mapState } from "vuex";
 export default {
   name: "App",
-
+  components: {
+    Login,
+  },
   data: () => ({
     drawer: false,
+    IsLogin: store.state.IsNotlogin,
     items: [
       { title: "Home", icon: "mdi-view-dashboard" },
       { title: "About", icon: "mdi-information" },
     ],
   }),
+  methods: {
+  },
+  computed: {
+    ...mapState(["IsNotlogin"]),
+  },
 };
 </script>
