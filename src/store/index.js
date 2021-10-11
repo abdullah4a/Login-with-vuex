@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from "../router"
 import { Data } from "../shared";
 Vue.use(Vuex)
 const state = {
@@ -37,7 +38,7 @@ const mutations = {
     LogoutMut(state) {
         state.UserLogin = [];
         state.AdminLogin = [];
-
+        router.push("/")
     }
 }
 const actions = {

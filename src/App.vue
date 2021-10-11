@@ -1,5 +1,5 @@
 <template>
-  <v-app v-if="IsNotLogin">
+  <v-app v-if="IsNotlogin">
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
@@ -63,8 +63,7 @@ export default {
       { title: "About", icon: "mdi-information" },
     ],
   }),
-  methods: {
-  },
+  methods: {},
   computed: {
     ...mapState(["IsNotlogin"]),
   },

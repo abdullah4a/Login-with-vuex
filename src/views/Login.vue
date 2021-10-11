@@ -5,7 +5,7 @@
         <v-card-title>
           <v-icon>mdi-login</v-icon>
           &nbsp;
-          <span>login</span>
+          <span class="text-h4 text-center">login</span>
         </v-card-title>
         <v-card-actions>
           <v-btn plain @click="GotoApp">
@@ -19,7 +19,6 @@
     </v-container>
   </v-app>
 </template>
-
 <script>
 export default {
   methods: {
@@ -31,7 +30,6 @@ export default {
       };
     },
     GotoApp() {
-      this.$emit("Loginfun", this.User.Islogin);
     },
   },
 };
