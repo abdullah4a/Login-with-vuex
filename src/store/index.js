@@ -4,7 +4,6 @@ import router from "../router"
 import { Data } from "../shared";
 Vue.use(Vuex)
 const state = {
-    // a: 2,
     UserLogin: [],
     AdminLogin: [],
     IsNotlogin: false,
@@ -18,21 +17,26 @@ const mutations = {
         state.AdminLogin = admin
     },
     UserLoginmut(state, user) {
-        if (state.UserLogin.email === user.email || state.UserLogin.username === user.username && state.UserLogin.password === user.password) {
-            user.id = state.UserLogin.id;
-            user.isactive = state.UserLogin.isactive
+        if (state.UserLogin.email === user.email && state.UserLogin.password === user.password) {
+            // user.id = state.UserLogin.id;
+            // user.isactive = state.UserLogin.isactive
+            // router.push("/")
+            state.IsNotlogin = user.isactive
         } else {
-            user.isactive = state.IsNotlogin
-            user.type = state.error
+            console.log("Can't Login")
+                // user.isactive = state.IsNotlogin
+                // user.type = state.error
         }
     },
     AdminLoginmut(state, Admin) {
-        if (state.AdminLogin.email === Admin.email || state.AdminLogin.username === Admin.username && state.AdminLogin.password === Admin.password) {
-            Admin.id = state.AdminLogin.id;
-            Admin.isactive = state.AdminLogin.isactive
+        if (state.AdminLogin.email === Admin.email & state.AdminLogin.password === Admin.password) {
+            // Admin.id = state.AdminLogin.id;
+            // Admin.isactive = state.AdminLogin.isactive
+            state.IsNotlogin = Admin.isactive
         } else {
-            Admin.isactive = state.IsNotlogin
-            Admin.type = state.error
+            console.log("Can't Login")
+                // Admin.isactive = state.IsNotlogin
+                // Admin.type = state.error
         }
     },
     LogoutMut(state) {
@@ -52,8 +56,10 @@ const actions = {
     },
     LoginUserAct({ commit }, user) {
         commit("UserLoginmut", user)
+    },
+    LoginAdminAct({ commit }, admin) {
+        commit("AdminLoginmut", admin)
     }
-
 }
 const modules = {}
 

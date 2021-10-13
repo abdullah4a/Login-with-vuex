@@ -1,10 +1,10 @@
 [{
-    "id ": 1132021,
+    "id": 1132021,
     "username": "abdullah4a",
     "name": "Abdullah",
-    "lastname ": "Iqbal",
+    "lastname": "Iqbal",
     "password": "abd123",
-    "email ": "abdullah @vuecoding.com ",
+    "email": "abdullah@vuecoding.com",
     "isactive": true,
     "type": "User"
 }]
